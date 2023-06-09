@@ -1,5 +1,5 @@
 const data = {
-    equipment:[
+    productItems:[
         
             {
               "id": 1,
