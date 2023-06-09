@@ -1,0 +1,74 @@
+{
+  "equipments": [
+    {
+      "id": 1,
+      "name": "TempusVel.txt",
+      "image": "http://dummyimage.com/163x100.png/ff4444/ffffff",
+      "description": "Food Chemist",
+      "price": 99.99
+    },
+    {
+      "id": 2,
+      "name": "NislNuncRhoncus.txt",
+      "image": "http://dummyimage.com/228x100.png/ff4444/ffffff",
+      "description": "Marketing Assistant",
+      "price": 199.99
+    },
+    {
+      "id": 3,
+      "name": "Eu.avi",
+      "image": "http://dummyimage.com/190x100.png/cc0000/ffffff",
+      "description": "VP Accounting",
+      "price": 499.99
+    },
+    {
+      "id": 4,
+      "name": "Arcu.ppt",
+      "image": "http://dummyimage.com/196x100.png/5fa2dd/ffffff",
+      "description": "Programmer III",
+      "price": 299.99
+    },
+    {
+      "id": 5,
+      "name": "Convallis.png",
+      "image": "http://dummyimage.com/222x100.png/cc0000/ffffff",
+      "description": "Recruiting Manager",
+      "price": 399.99
+    },
+    {
+      "id": 6,
+      "name": "PulvinarNullaPede.ppt",
+      "image": "http://dummyimage.com/220x100.png/5fa2dd/ffffff",
+      "description": "Developer III",
+      "price": 349.99
+    },
+    {
+      "id": 7,
+      "name": "Aliquet.xls",
+      "image": "http://dummyimage.com/177x100.png/cc0000/ffffff",
+      "description": "Help Desk Technician",
+      "price": 149.99
+    },
+    {
+      "id": 8,
+      "name": "IntegerNonVelit.tiff",
+      "image": "http://dummyimage.com/202x100.png/dddddd/000000",
+      "description": "Safety Technician III",
+      "price": 249.99
+    },
+    {
+      "id": 9,
+      "name": "IpsumPrimis.png",
+      "image": "http://dummyimage.com/185x100.png/ff4444/ffffff",
+      "description": "Media Manager IV",
+      "price": 449.99
+    },
+    {
+      "id": 10,
+      "name": "AmetSapien.gif",
+      "image": "http://dummyimage.com/187x100.png/dddddd/000000",
+      "description": "Structural Analysis Engineer",
+      "price": 599.99
+    }
+  ]
+}
