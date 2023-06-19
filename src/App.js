@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import data from "./components/backup/Data";
 import AboutUs from "./components/About/AboutUs";
 import Routed from "./components/Routes/Routes";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const { productItems } = data;
@@ -52,6 +53,7 @@ const handleCartClearance=()=>{
           handleCartClearance={handleCartClearance}
         />
       </Router>
+      <Footer/>
     </>
   );
 }

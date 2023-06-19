@@ -1,7 +1,6 @@
 body {
    margin: 0;
    padding: 0;
-   
    background-size: cover;
    background-position: center;
    font-family: Arial, sans-serif;
@@ -14,9 +13,9 @@ body {
  }
  
  .header {
-   position: sticky;
+   position: relative;
    top: 0;
-   min-height: 80px;
+   min-height: 50px;
    width: 100%;
    left: 0;
    right: 0;
@@ -25,7 +24,7 @@ body {
    justify-content: space-between;
    align-items: center;
    overflow: hidden;
-   background-color: #141414;
+   background-color: #3b0101;
    padding: 20px;
  }
  
@@ -35,6 +34,7 @@ body {
    color: white;
    font-size: 24px;
    font-weight: bold;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
  
  .header-links {
@@ -50,7 +50,8 @@ body {
  }
  
  .header-links ul li {
-   margin-right: 20px;
+   margin-right: 30px;
+   justify-content: space-between;
  }
  
  .header-links ul li a {
