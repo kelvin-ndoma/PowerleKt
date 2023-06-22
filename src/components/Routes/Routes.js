@@ -10,8 +10,8 @@ function Routed({ productItems, cartItems, handleAddProduct, handleRemoveProduct
   return (
     <div>
       <Routes>
-        <Route path="/aboutus" element={<Home/>}/>
-        <Route path="/" element={<ProductList productItems={productItems} handleAddProduct={handleAddProduct} />} />
+        <Route path="/" element={<Home/>}/>
+        <Route path="/productlist" element={<ProductList productItems={productItems} handleAddProduct={handleAddProduct} />} />
         <Route path="/cart" element={<Cart cartItems={cartItems} handleAddProduct={handleAddProduct} handleRemoveProduct={handleRemoveProduct} handleCartClearance={handleCartClearance}/>} />
       </Routes>
     </div>

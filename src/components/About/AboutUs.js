@@ -18,10 +18,10 @@ function AboutUs({ cartItems }) {
       <div className="header-links">
         <ul>
           <li>
-            <Link to="/aboutus" className="active-link">About Us</Link>
+            <Link to="/" className="active-link">About Us</Link>
           </li>
           <li>
-            <Link to="/products" className="inactive-link">Products</Link>
+            <Link to="/productlist" className="active-link">Products</Link>
           </li>
           <li>
             <Link to="/cart" className="cart">
