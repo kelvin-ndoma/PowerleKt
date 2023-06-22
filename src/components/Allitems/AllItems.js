@@ -19,6 +19,7 @@ const AllItems = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
         className="search-input"
       />
+      <h1>What we sell!</h1>
       <div className="product-container">
         {filteredProducts.map((product, index) => (
           <div key={index} className="product-item">
