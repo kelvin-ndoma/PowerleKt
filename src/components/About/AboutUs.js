@@ -21,7 +21,7 @@ function AboutUs({ cartItems }) {
             <Link to="/aboutus" className="active-link">About Us</Link>
           </li>
           <li>
-            <Link to="/" className="inactive-link">Products</Link>
+            <Link to="/products" className="inactive-link">Products</Link>
           </li>
           <li>
             <Link to="/cart" className="cart">
