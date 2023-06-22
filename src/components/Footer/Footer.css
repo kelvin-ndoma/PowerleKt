@@ -1,36 +1,51 @@
 .contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .map-container {
-    grid-column: 1 / 2;
-  }
-  
-  .contact-form {
-    grid-column: 2 / 3;
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
 
-    margin-left: 90px;
-    padding: 5px;
+.map-container {
+  grid-column: 1 / 2;
+}
+
+.contact-form {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-left: 90px;
+  padding: 5px;
+}
+
+.contact-info {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-right: 10px;
+}
+
+.facebook-icon {
+  font-size: 24px;
+  color: #3b5998;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
   }
-  
-  /* Adjustments for smaller screens */
-  @media (max-width: 768px) {
-    .contact-container {
-      grid-template-columns: 1fr;
-    }
-  
-    .contact-form {
-      grid-column: 1 / 2;
-      margin-left: 0;
-      margin-top: 20px;
-    }
+
+  .contact-form {
+    grid-column: 1 / 2;
+    margin-left: 0;
+    margin-top: 20px;
   }
-  
+}

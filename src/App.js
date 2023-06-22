@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import data from "./components/backup/Data";
 import AboutUs from "./components/About/AboutUs";
 import Routed from "./components/Routes/Routes";
-import Footer from "./components/Footer/Footer";
+import "./App.css"; // Import the CSS file for App component
 
 function App() {
   const { productItems } = data;
@@ -38,23 +38,29 @@ function App() {
       );
     }
   };
-const handleCartClearance=()=>{
-  setCartItems([]);
-}
+
+  const handleCartClearance = () => {
+    setCartItems([]);
+  };
+
   return (
-    <>
+    <div className="app-wrapper">
       <Router>
-        <AboutUs cartItems={cartItems}/>
-        <Routed
-          productItems={productItems}
-          cartItems={cartItems}
-          handleAddProduct={handleAddProduct}
-          handleRemoveProduct={handleRemoveProduct}
-          handleCartClearance={handleCartClearance}
-        />
+        <div className="content-wrapper">
+          <AboutUs cartItems={cartItems} />
+          <Routed
+            productItems={productItems}
+            cartItems={cartItems}
+            handleAddProduct={handleAddProduct}
+            handleRemoveProduct={handleRemoveProduct}
+            handleCartClearance={handleCartClearance}
+          />
+        </div>
+        <footer className="app-footer">
+          &copy; {new Date().getFullYear()} PowerLekt. All rights reserved.
+        </footer>
       </Router>
-      <Footer/>
-    </>
+    </div>
   );
 }
 

@@ -1,0 +1,52 @@
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the number of columns for responsiveness */
+    gap: 20px;
+    margin: 0 -10px; /* Add margin spacing to push contents away from the margins */
+  }
+  
+  .product-item {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .product-name {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .product-price {
+    margin: 0;
+    color: #888888;
+  }
+  
+  .product-list {
+    /* background-image: url(https://img.freepik.com/free-photo/various-medical-equipments-blue-backdrop_23-2147941824.jpg?size=626&ext=jpg&ga=GA1.1.1191098058.1684769255&semt=ais); */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    padding: 20px; /* Add spacing from the margins */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .product-container {
+      grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .product-container {
+      grid-template-columns: 1fr; /* Adjust the number of columns for mobile screens */
+    }
+  }
+  

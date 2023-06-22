@@ -3,39 +3,39 @@ const data = {
         
             {
               "id": 1,
-              "name": "TempusVel.txt",
-              "image": "./pics/imge4.jpg",
+              "name": "Litman Stethoscope",
+              "image": "./pics/stethoscope.jpg",
               "description": "Food Chemist",
-              "price": 99.99
+              "price": 4500
             },
             {
               "id": 2,
-              "name": "NislNuncRhoncus.txt",
-              "image": "./pics/imge4.jpg",
+              "name": "Pregnacy Test Kit",
+              "image": "./pics/preg.jpg",
               "description": "Marketing Assistant",
-              "price": 199.99
+              "price": 1800
             },
             {
               "id": 3,
-              "name": "Eu.avi",
-              "image": "./pics/imge4.jpg",
+              "name": "Microscope",
+              "image": "./pics/microscope.jpg",
               "description": "VP Accounting",
-              "price": 499.99
+              "price": 23000
             },
             {
               "id": 4,
-              "name": "Arcu.ppt",
-              "image": "./pics/imge4.jpg",
+              "name": "Microscope Slides(Plain)",
+              "image": "./pics/lens.jpg",
               "description": "Programmer III",
-              "price": 299.99
+              "price": 300
             },
           
               {
               "id": 5,
-              "name": "AmetSapien.gif",
-              "image": "./pics/imge4.jpg",
+              "name": "Microscope Slides(Frosted))",
+              "image": "./pics/mcroscope.jpg",
               "description": "Structural Analysis Engineer",
-              "price": 599.99
+              "price": 300
             }  
     ]
 }

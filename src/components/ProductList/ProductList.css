@@ -68,7 +68,7 @@
   padding: 6px 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  margin-right: 10;
+  margin-right: 10px;
 }
 
 .search-button {
@@ -109,7 +109,16 @@
   }
 
   .slick-slide > div {
+    flex-direction: row;
+    height: auto;
     padding: 5px;
+    justify-content: space-between;
+  }
+
+  .slick-slide > div > div:first-child {
+    width: 40%;
+    max-height: none;
+    margin-right: 10px;
   }
 
   .search-container {
