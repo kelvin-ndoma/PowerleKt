@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
 import AllProducts from "../backup/AllProducts";
 import "./Allitems.css";
@@ -17,6 +17,7 @@ const AllItems = () => {
   // Handle click event on product name
   const handleClick = (product) => {
     setSelectedItem(product);
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
   };
 
   const handleEmail = () => {
