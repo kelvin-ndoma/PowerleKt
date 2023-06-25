@@ -5,10 +5,16 @@
   align-items: flex-start;
   justify-content: center;
   padding: 20px;
+  background: rgb(142, 170, 106);
 }
 
 .map-container {
   grid-column: 1 / 2;
+}
+
+.get-intouch {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .contact-form {
@@ -30,11 +36,36 @@
 
 .contact-info p {
   margin-right: 10px;
+  color: white;
 }
 
 .facebook-icon {
   font-size: 24px;
   color: #3b5998;
+}
+
+.contact-form label {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  background-color: #3b5998;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
 }
 
 /* Adjustments for smaller screens */

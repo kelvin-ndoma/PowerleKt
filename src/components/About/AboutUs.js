@@ -6,12 +6,10 @@ import { FaShoppingCart } from 'react-icons/fa';
 function AboutUs({ cartItems }) {
   return (
     <header className="header">
-      <div>
-        <h1 className="logo">
-          <Link to="/aboutus">
-            <img src="https://t4.ftcdn.net/jpg/02/11/96/73/360_F_211967379_XRebo9HOfAgRnbD8f2uvXmYIHyCjy2PM.jpg" alt="PowerleKtain" className="logo-image" />
-          </Link>
-        </h1>
+      <div className="logo">
+        <Link to="/">
+          <img src="https://t4.ftcdn.net/jpg/02/11/96/73/360_F_211967379_XRebo9HOfAgRnbD8f2uvXmYIHyCjy2PM.jpg" alt="Powerlekt" className="logo-image" />
+        </Link>
         <div className="logo-name">Powerlekt</div>
       </div>
 

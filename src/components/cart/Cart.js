@@ -6,8 +6,6 @@ const Cart = ({ cartItems, handleAddProduct, handleRemoveProduct, handleCartClea
   const [email, setEmail] = useState('');
   const [customerRequest, setCustomerRequest] = useState('');
 
-  const totalPrice = cartItems.reduce((price, item) => price + item.quantity * item.price, 0);
-
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
   };
@@ -33,9 +31,7 @@ const Cart = ({ cartItems, handleAddProduct, handleRemoveProduct, handleCartClea
       items: cartItems.map((item) => ({
         name: item.name,
         quantity: item.quantity,
-        price: item.price,
       })),
-      total: totalPrice.toFixed(2),
     };
 
     emailjs
@@ -78,19 +74,9 @@ const Cart = ({ cartItems, handleAddProduct, handleRemoveProduct, handleCartClea
                     -
                   </button>
                 </div>
-                <div className="cart-item-price">
-                  {item.quantity} * Ksh {item.price}
-                </div>
               </div>
             </div>
           ))}
-
-          <div className="cart-summary">
-            <div className="cart-summary-info">
-              You have selected {cartItems.reduce((total, item) => total + item.quantity, 0)} item{cartItems.length !== 1 ? 's' : ''}
-            </div>
-            <div className="cart-summary-total">Total: Ksh {totalPrice.toFixed(2)}</div>
-          </div>
 
           <div className="order-form">
             <h1>Please place your order below</h1>
