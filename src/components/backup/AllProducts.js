@@ -1,5 +1,17 @@
 const items ={
     AllProducts:[
+      {
+        "name": "Dental unit",
+        "price": "Ksh 2800"
+      },
+      {
+        "name": "Electric ICU bed",
+        "price": "Ksh 2800"
+      },
+      {
+        "name": "Hospital Beds",
+        "price": "Ksh 2800"
+      },
         {
           "name": "S.P H.pylori Antigen 25's",
           "price": "Ksh 2800"

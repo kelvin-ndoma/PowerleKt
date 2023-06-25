@@ -29,12 +29,14 @@ const ProductList = ({ productItems, handleAddProduct }) => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
@@ -42,19 +44,16 @@ const ProductList = ({ productItems, handleAddProduct }) => {
 
   return (
     <div className="products">
-      <h1>Explore Our Products</h1> {/* Added h1 element */}
+      <h1>Explore Our Products</h1>
       <Slider {...settings}>
         {productItems.map((productItem) => (
           <div className="card" key={productItem.id}>
             <div>
               <img className="product-image" src={productItem.image} alt={productItem.name} />
             </div>
-            <div>
+            <div className="product-info">
               <h3 className="product-name">{productItem.name}</h3>
               <p className="product-description">{productItem.description}</p>
-            </div>
-           
-            <div>
               <button
                 className="product-add-button"
                 onClick={() => handleAddProduct(productItem)}
@@ -65,7 +64,7 @@ const ProductList = ({ productItems, handleAddProduct }) => {
           </div>
         ))}
       </Slider>
-      <AllItems/>
+      <AllItems />
     </div>
   );
 };
