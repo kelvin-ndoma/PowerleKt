@@ -1,27 +1,24 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import AllProducts from "../backup/AllProducts";
 import "./Allitems.css";
 
 const AllItems = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedItem, setSelectedItem] = useState(null); // New state variable for the selected item
+  const [selectedItem, setSelectedItem] = useState(null);
   const [senderEmail, setSenderEmail] = useState('');
   const [customerRequest, setCustomerRequest] = useState('');
 
-  // Filter the products based on the search term
   const filteredProducts = AllProducts.AllProducts.filter((product) =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  // Handle click event on product name
   const handleClick = (product) => {
     setSelectedItem(product);
     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
   };
 
   const handleEmail = () => {
-    // Implement your logic to send an email
     if (!senderEmail.trim() || !customerRequest.trim()) {
       alert('Please enter your email and request.');
       return;
@@ -29,7 +26,6 @@ const AllItems = () => {
 
     const templateParams = {
       name: selectedItem.name,
-      // Include other relevant data from the selected item
       senderEmail: senderEmail,
       customerRequest: customerRequest,
     };
@@ -82,7 +78,7 @@ const Footer = ({
   customerRequest,
 }) => {
   if (!selectedItem) {
-    return null; // Render nothing if no item is selected
+    return null;
   }
 
   const handleSenderEmailChange = (e) => {
@@ -93,14 +89,14 @@ const Footer = ({
     setCustomerRequest(e.target.value);
   };
 
-  const phoneNumber = "+254123456789"; // Replace with the desired phone number
+  const whatsappNumbers = [
+    "+254123456789", // Replace with the desired WhatsApp number
+    "+254987654321", // Replace with another WhatsApp number
+  ];
 
   return (
     <div className="footer">
-      {/* Render footer content based on the selected item */}
       <h2>Selected Item: {selectedItem.name}</h2>
-      {/* <p>Price: {selectedItem.price}</p> */}
-      {/* <p>Description: {selectedItem.description}</p> */}
       <div>
         <input
           type="email"
@@ -116,7 +112,14 @@ const Footer = ({
         ></textarea>
         <button onClick={handleEmail}>Send Request</button>
         <p>
-          Call: <a className="number" href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+          WhatsApp Numbers: {whatsappNumbers.map((number, index) => (
+            <React.Fragment key={index}>
+              <a className="number" href={`https://wa.me/${number}`}>
+                {number}
+              </a>
+              {index !== whatsappNumbers.length - 1 && ' or '}
+            </React.Fragment>
+          ))}
         </p>
       </div>
     </div>

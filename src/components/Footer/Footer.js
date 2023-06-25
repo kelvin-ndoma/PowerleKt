@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
-import { FaFacebook } from 'react-icons/fa';
+import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -28,10 +28,15 @@ const Footer = () => {
       );
   };
 
+  const whatsappNumber = "0757621197"; // Replace with the desired WhatsApp number
+
   return (
     <div className="contact-container">
       <div className="get-intouch">
         <h1>Contact us</h1>
+      </div>
+      <div className="opening-hours">
+        <p>We are open from Monday to Friday, 8am to 5pm.</p>
       </div>
       <div className="map-container">
         {/* Embed Google Map */}
@@ -52,8 +57,17 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaFacebook className="facebook-icon" />
-          <span className="facebook-text">Facebook</span>
+          <FaFacebook className="icon" />
+          <span className="text">Facebook</span>
+        </a>
+        <a
+          className="whatsapp"
+          href={`https://wa.me/${whatsappNumber}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp className="icon" />
+          <span className="text">WhatsApp</span>
         </a>
       </div>
 
