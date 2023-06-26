@@ -11,7 +11,7 @@ const AboutUs = () => {
           <div className="wave"></div>
         </div>
         <div className="content">
-          <h2>About Powerlekt Solutions</h2>
+          <h2>About Powerlekt </h2>
           <p>Powerlekt Solutions is a leading provider of high-quality medical equipment, dedicated to improving patient care and healthcare outcomes.</p>
           <p>With a strong commitment to innovation and customer satisfaction, we offer a comprehensive range of medical devices and solutions designed to meet the evolving needs of healthcare professionals and institutions.</p>
           <p>At Powerlekt Solutions, we understand the critical role that reliable and advanced medical equipment plays in the delivery of effective healthcare. Therefore, we collaborate with renowned manufacturers and suppliers to ensure that our customers have access to cutting-edge technologies and top-of-the-line products.</p>

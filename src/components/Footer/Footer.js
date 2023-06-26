@@ -36,7 +36,8 @@ const Footer = () => {
         <h1>Contact us</h1>
       </div>
       <div className="opening-hours">
-        <p>We are open from Monday to Friday, 8am to 5pm.</p>
+        <p>We are open from Monday to Friday, 8am to 6pm.</p><br></br>
+      <p>Saturdays we open at 8am to 5pm</p>
       </div>
       <div className="map-container">
         {/* Embed Google Map */}
@@ -49,7 +50,7 @@ const Footer = () => {
         <p>
           P.O Box 3232-00506 Nyayo, Nairobi Kenya. <br />
           Email: powerlekt@gmail.com <br />
-          Tel: +254 736 230893
+ 
         </p>
         <a
           className="facebook"
